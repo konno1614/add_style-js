@@ -1,0 +1,12 @@
+// media query
+$media-2x:        'only screen and (min-resolution: 2dppx)';
+$media-pc:        'only screen and (min-width: 1024px)';
+$media-pc-2x:     'only screen and (min-width: 1024px) and (min-resolution: 2dppx)';
+$media-tablet:    'only screen and (max-width: 1024px)';
+$media-tablet-2x: 'only screen and (max-width: 1024px) and (min-resolution: 2dppx)';
+$media-mobile:    'only screen and (max-width: 599px)';
+$media-mobile-2x: 'only screen and (max-width: 599px) and (min-resolution: 2dppx)';
+$media-smp:       'screen and (max-width: 750px)';
+$media-smp-narrow:'screen and (max-width: 374px)';
+// autoprefixerを使わない場合は以下
+// (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx)

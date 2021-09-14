@@ -1,0 +1,200 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    /*transition: all 0.3s ease;*/
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+    font-style: normal;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+caption,
+th {
+    text-align: left;
+}
+
+q:before,
+q:after {
+    content: '';
+}
+
+object,
+embed {
+    vertical-align: top;
+}
+
+hr,
+legend {
+    display: none;
+    clear: both;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+img,
+abbr,
+acronym,
+fieldset {
+    border: 0;
+    vertical-align: bottom;
+    outline: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    list-style-type: none;
+    &.disc {
+        padding-left: 2em;
+        line-height: 1.5;
+        margin-bottom: 2em;
+        li {
+            margin-top: 1em;
+            list-style-type: disc;
+        }
+        // ulの場合
+        li ul {
+            padding-left: 3em;
+            li {
+                list-style-type: none;
+            }
+            &.disc {
+                li {
+                    list-style-type: disc;
+                }
+            }
+        }
+        // olの場合
+        li ol {
+            padding-left: 3em;
+            li {
+                list-style-type: none;
+            }
+            &.decimal {
+                li {
+                    list-style-type: decimal;
+                }
+            }
+        }
+    }
+}
+
+ol {
+    list-style-type: none;
+    &.decimal {
+        padding-left: 2em;
+        line-height: 1.5;
+        margin-bottom: 2em;
+        ul {
+            margin-bottom: 2em;
+        }
+        li {
+            margin-top: 1em;
+            list-style-type: decimal;
+        }
+        // ulの場合
+        li ul {
+            padding-left: 3em;
+            li {
+                list-style-type: none;
+            }
+            &.disc {
+                li {
+                    list-style-type: disc;
+                }
+            }
+        }
+        // olの場合
+        li ol {
+            padding-left: 3em;
+            li {
+                list-style-type: none;
+            }
+            &.decimal {
+                li {
+                    list-style-type: decimal;
+                }
+            }
+        }
+    }
+
+}
+
+dl {
+    dt {
+        font-size: 1.8rem;
+        font-weight: $font-bold;
+        @media #{$media-smp} {
+            font-size: 1.6rem;
+        }
+    }
+    dd {
+        padding-left: 2em;
+    }
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    appearance: none;
+}
+
+input {
+        appearance: none;
+        border: none;
+        outline: none;
+    }
+
+textarea {
+    appearance: none;
+    border: 0;
+    outline: none;
+}
